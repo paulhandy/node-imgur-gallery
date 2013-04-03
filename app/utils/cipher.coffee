@@ -1,0 +1,1 @@
+module.exports = require('./crypter') process.env.SECRET or 'k39sn5y'

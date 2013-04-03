@@ -1,0 +1,7 @@
+<form ng-submit="update()">
+    <h3>{{user.email}}</h3>
+    <h4>Roles</h4>
+    Upload: <input type="checkbox" ng-model="upload" ng-change="update(user)"><br>
+    Admin: <input type="checkbox" ng-model="admin" ng-change="update(user)"><br>
+    Edit: <input type="checkbox" ng-model="edit" ng-change="update(user)">
+</form>

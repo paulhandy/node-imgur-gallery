@@ -1,0 +1,10 @@
+<h3>{{exhibit.name}}</h3>
+<a href="#" ng-click="remove()">Delete Gallery</a>
+<span ng-repeat="image in media" ng-cloak>
+    <figure>
+        <img src="{{small(image.data.link)}}">
+        <figcaption>
+            <i class="icon-remove" ng-click="delete(image)"></i>
+        </figcaption>
+    </figure>
+</span>

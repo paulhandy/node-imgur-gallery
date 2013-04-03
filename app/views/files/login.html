@@ -1,0 +1,24 @@
+<script>
+function HandleLogin(result){
+    if(window.localStorage){
+        localStorage.setItem('sk',result.key);
+    }
+    location.reload();
+}
+</script>
+<link href="/stylesheets/zocial.css" rel="stylesheet"/>
+<form action="/auth/openid" method="post" target="_blank">
+	<input type="hidden" name="openid_identifier" value="https://www.google.com/accounts/o8/id"/><button class="zocial google">Sign in with Google</button>
+</form>
+<style type="text/css">
+input[name="openid_identifier"] {
+  background: url("/images/openid-icon-16x16.png") left no-repeat;
+  padding-left: 17px;
+}
+</style>
+<form action="/auth/openid" method="post" target="_blank">
+	<p>
+		&nbsp;--Or use your OpenID url--
+	</p>
+	<input type="text" name="openid_identifier"/><input type="submit" value="Submit"/>
+</form>

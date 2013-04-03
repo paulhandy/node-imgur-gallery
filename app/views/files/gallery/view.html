@@ -1,0 +1,7 @@
+<div id="upload"></div>
+<div id="edit"></div>
+<h3>{{exhibit.name}}</h3>
+<figure ng-repeat="image in media" ng-cloak>
+    <a href="/collection/gallery/{{image.id}}"><img src="{{small(image.data.link)}}"></a>
+    <figcaption>{{image.description}}</figcaption>
+</figure>

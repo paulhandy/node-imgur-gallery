@@ -1,0 +1,11 @@
+<script>
+function HandleLogin(result){
+    if(window.localStorage){
+        localStorage.removeItem('sk');
+    }
+    location.reload();
+}
+</script>
+<form action="/logout" method="post" target="_blank">
+	<button class="red button">Leave</button>
+</form>

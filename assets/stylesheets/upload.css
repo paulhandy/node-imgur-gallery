@@ -1,0 +1,34 @@
+.dropzone.dragover {
+  border: 10px dashed #303030;
+  position: relative;
+}
+.dropzone {
+  position: relative;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border: 10px dashed #c0c0c0;
+  font-weight: bold;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  width: 20em;
+  height: 10em;
+}
+#output img,
+.uploadOutput img {
+  margin: 5px;
+  float: left;
+  border: 1px solid transparent;
+}
+#output img:hover,
+.uploadOutput img:hover {
+  -webkit-box-shadow: 0 0 5px 5px #ccc;
+  -moz-box-shadow: 0 0 5px 5px #ccc;
+  box-shadow: 0 0 5px 5px #ccc;
+  border: 1px solid #999;
+}
+.over50 {
+  background-color: #f00;
+  opacity: 0.5;
+}

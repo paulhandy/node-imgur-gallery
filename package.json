@@ -1,0 +1,28 @@
+{
+  "description": "Gallery app",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "union": "0.3.5",
+    "flatiron": "0.3.5",
+    "resourceful":"0.3.x",
+    "restful":"0.4.x",
+    "plates":"*",
+    "connect":"*",
+    "openid":">=0.5.1",
+    "request":"*",
+    "ecstatic":"0.4.x",
+    "coffee-script":"*"
+  },
+  "devDependencies": {
+    "api-easy": "0.3.2",
+    "vows": "0.6.x"
+  },
+  "scripts": {
+    "test": "vows --spec",
+    "start": "node app.js"
+  },
+  "name": "gallery",
+  "author": "Paul",
+  "homepage": ""
+}

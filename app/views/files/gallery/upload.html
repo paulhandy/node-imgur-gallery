@@ -1,0 +1,13 @@
+<link href="/stylesheets/upload.css" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/buttons.css" rel="stylesheet" type="text/css" />
+<script src="/js/ThumbnailCreator.js"></script>
+<center>
+    <div class="dropzone" id="dropbox">Drop images here</div>
+    <input type="file" multiple name="files" ng-model="thumbnail" onchange="angular.element(this).scope().setFile(this)"/>
+    <p>
+    <button class="blue button" ng-click="upload()">Upload</button>
+    </p>
+    <div class="uploadOutput">
+        <img  ng-repeat="thumb in thumbs" src=" {{thumb.nail.src}}" alt="{{thumb.file.name}}" title=" {{thumb.nail.title}}" ng-click="" >
+    </div>
+</center>
